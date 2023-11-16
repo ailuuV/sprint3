@@ -1,0 +1,875 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: playfair display;
+}
+
+/*-------------------------------------NAVEGADOR-------------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(17, 11, 11, 0.54);
+    width: 100%;
+    font-size: 18px;
+}
+
+/*-------------------------------------LOGO-------------------------------------*/
+.logo {
+    width: 90px;
+    height: 90px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.logoPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoPrincipal p {
+    padding-left: 10px;
+    padding-top: 20px;
+    color: #E6E2AF
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.menu {
+    display: flex;
+    margin-top: 40px;
+}
+
+.menu li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #E6E2AF;
+}
+
+.menu li a:hover{
+    animation: blur-out-contract  0.4 linear both;
+}
+
+.menu2 {
+    display: flex;
+    margin-top: 40px;
+}
+
+.menu2 li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.menu2 li a {
+    text-decoration: none;
+    color: #E6E2AF;
+}
+
+
+
+.contacto {
+    color: #E6E2AF
+}
+
+.body {
+    background-color: #000000;
+}
+
+/*-------------------------------------ENCABEZADO-------------------------------------*/
+
+.botonesHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productoEncabezado {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.botonProducto {
+    border-radius: 59px;
+    background: #E6E2AF;
+    border: none;
+    padding: 15px 30px;
+    margin-left: 10px;
+    color: #333;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: -100px;
+    cursor: pointer;
+}
+.botonProducto:hover{
+    animation: shadow-drop-center 0.4 linear both;
+}
+
+.productoEncabezado {
+    list-style: none;
+}
+
+.redSocial li {
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 90%;
+}
+
+
+/*-------------------------------------SEPARADOR BODY / FOOTER -------------------------------------*/
+
+.separador {
+    height: 3px;
+    background-color: #E6E2AF;
+}
+
+/*-------------------------------------FOOTER-------------------------------------*/
+.footer {
+    justify-content: space-between;
+    background-color: #000000;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center
+}
+
+.logoSecundario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marca p {
+    padding-left: 10px;
+    color: #E6E2AF;
+}
+
+.boria {
+    font-family: 'Alex Brush', serif;
+    font-size: 35px;
+    font-weight: lighter;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.9);
+}
+
+.bomboneria {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.9);
+}
+
+.derechos{
+    font-size: 12px;
+    color: #E6E2AF;
+    text-align: center;
+}
+/*-------------------------------------MENU FOOTER-------------------------------------*/
+
+.footerMenu1 {
+    margin-top: 20px;
+}
+
+.footerMenu1 li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.footerMenu1 li a {
+    text-decoration: none;
+    color: #E6E2AF;
+    font-size: 12px;
+}
+
+.footerMenu2 {
+    margin-top: 40px;
+}
+
+.footerMenu2 li {
+    margin-right: 20px;
+    list-style: none;
+    color: #E6E2AF;
+    font-size: 15px;
+}
+
+/*-------------------------------------PAGINA DE INICIO-------------------------------------*/
+
+body {
+    background-color: #000000;
+}
+
+.logoProducto {
+    width: 140px;
+    height: 105px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.portadainicio {
+    padding: 0%;
+    background-image: url('C:/Users/VidelaA/Documents/Curso de HTML/sprint/assets/img/portada.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+header h1 {
+    font-family: 'Alex Brush', serif;
+    font-size: 99px;
+    font-weight: lighter;
+    color: #E6E2AF;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+
+header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    color: #E6E2AF;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+
+/*MAIN*/
+
+main {
+    background-color: #000000;
+}
+
+h3 {
+    font-family: 'Amaranth', serif;
+    font-size: 30px;
+    color: #E6E2AF;
+    text-align: left;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+/*DESCRIPCIONES*/
+
+.contenedor{
+    display: flex;
+
+}
+
+/*Descripcion Creando Magia*/
+
+.tituloCreandoMagia{
+    padding: 100px 50px 50px 0px;
+    text-align: justify;
+    margin-left: 100px;
+}
+
+.textoCreandoMagia{
+    padding-left: 150px;
+    text-align: justify;
+}
+
+.CreandoMagia{
+    padding-right: 100px;
+}
+
+.imagen1 {
+    text-align: center;
+    width: 350px;
+}
+
+/*Descripcion Creando Momentos*/ 
+
+.tituloCreandoMomentos{
+    text-align: top;
+    padding-top: 100px ;
+    padding-bottom: 50px;
+}
+
+.imagen2 {
+    text-align: center;
+    width: 350px;
+}
+
+.textoCreandoMomentos {
+    padding: 0px 100px 10px 50px;
+    text-align: justify;
+}
+
+
+
+
+/*-------------------------------------PAGINA DE PRODUCTOS-------------------------------------*/
+
+.bodyProductos {
+    background-color: #000000;
+}
+
+.portadaProducto {
+    background-image: url('C:/Users/VidelaA/Documents/Curso de HTML/sprint/assets/img/portadaProductos.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.redSocialProductos {
+    display: inline;
+    list-style: none;
+    padding-left: 95%;
+}
+
+.tituloProducto {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    font-weight: lighter;
+    color: #E6E2AF;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+
+/*ENLACES DENTRO DE LA MISMA PAGINA*/
+
+.imagenEnlace {
+    text-align: center;
+
+}
+
+.contenedorProducto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.botonPrincipal {
+    border-radius: 59px;
+    background: #E6E2AF;
+    border: none;
+    color: #333;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.botonPrincipal:hover{
+    animation: shadow-drop-center 0.4 linear both;
+}
+
+/*TIENDA ONLINE*/
+
+.tituloSecciones {
+    font-family: 'Amaranth', serif;
+    font-size: 37px;
+    font-weight: lighter;
+    color: #E6E2AF;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.9);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+}
+
+.lineaSeparadora {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.separadorProductos {
+    height: 3px;
+    background-color: #E6E2AF;
+}
+
+/*PRODUCTOS*/
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.conteiner li {
+    padding-left: 150px;
+}
+
+.seccionProducto{
+    margin:50px;
+}
+.card {
+    margin-left: 50px;
+}
+
+.card-body {
+    background-color: #000000;
+}
+
+.card-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: center;
+    color: #E6E2AF;
+    padding-top: 20px;
+
+}
+
+.card-precio {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    text-align: center;
+    color: #E6E2AF;
+}
+
+.ramo {
+    font-size: 20px;
+    color: #E6E2AF;
+    text-align: center;
+}
+
+.botonAgregar {
+    font-size: 11px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 59px;
+    background: #E6E2AF;
+    border: none;
+    color: #333;
+    width: 130px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+
+.botonAgregar:hover{
+    animation: vibrate 1.5s linear both
+}
+
+
+#mesasDeChocolate ul {
+    display: flex;
+    list-style: none
+}
+
+#mesasDeChocolate li {
+    padding-left: 250px;
+}
+
+#mesasDeChocolate {
+    padding-bottom: 50px;
+}
+
+/*--------------------------------------PAGINA NOSOTROS---------------------------------------*/
+
+
+.nosotros {
+    background-color: #000000;
+    padding: 0%;
+    background-image: url('C:/Users/VidelaA/Documents/Curso de HTML/sprint/assets/img/portada nosotros.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.tituloNosotros {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-align: center;
+    color: #E6E2AF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    padding-top: 100PX;
+    padding-bottom: 140px;
+}
+
+.subtituloNosotros {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+
+}
+
+.mainNosotros {
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.mainNosotros p {
+    text-align: justify;
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.imgNosotros {
+    padding-left: 160px;
+    width: 600px;
+}
+
+
+/*--------------------------------------PAGINA CONTACTO---------------------------------------*/
+
+.bodyContacto {
+    background-color: #000000;
+}
+
+.tituloContacto {
+    font-size: 60px;
+    padding-top: 50px;
+}
+
+.formulario-container {
+    display: flex;
+    width: 400px;
+    padding-left: 270px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+}
+
+.campos-izquierda {
+    flex: 1;
+    padding: 10px;
+}
+
+.campo-derecha {
+    flex: 1.5;
+    padding: 10px;
+    height: 150px
+}
+
+label,
+input,
+textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #000000;
+    height: 30px;
+    color: #fff;
+    border-color: #FFFFFF;
+    font-size: 15px;
+}
+
+textarea {
+    height: calc(100% - 30px);
+}
+
+/*--------------------------------------PAGINA CARRITO---------------------------------------*/
+
+.conteinerCarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteinerCarrito h1{
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+.conteiner-compra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #E6E2AF;
+    padding-bottom: 30px;
+}
+
+.conteiner-compra div{
+   flex-grow: 1;
+   flex-wrap: 200;
+}
+.conteiner-compra img{
+    float: right;
+    padding-top: 10px;
+    margin-left: -70px;
+}
+
+.conteiner-compra p{
+    font-size: 20px;
+    color: #000000;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.conteiner-pago{
+    display: block;
+}
+
+.conteiner-pago div{
+    padding-bottom: 30px;
+}
+
+
+.linea-vertical {
+    border-left: 2px solid #000000;
+    height: auto;}
+    
+
+.linea-horizontal {
+    border-bottom: 1px solid #000000;
+    height: 1px;
+    margin-top: -50px;
+}
+
+.boton-terminar{
+    font-size: 12px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 59px;
+    background: #000000;
+    border: none;
+    color: #E6E2AF;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+}
+
+.boton-terminar:hover{
+    animation: shadow-pop-bottom-left 0.4s linear both
+}
+
+.terminar-compra{
+    text-align: center;
+}
+
+.boton-continuar{
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 59px;
+    background: #E6E2AF;
+    border: none;
+    color: #000000;
+    width: 170px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+}
+
+.boton-continuar:hover{
+    animation: vibrate 1.5s linear both
+}
+
+.continuar-comprando{
+    padding-left: 20px;
+}
+
+/*--------------------------------------PRODUCTOS 2---------------------------------------*/
+.body-producto{
+    background-color: #000000;
+}
+.headerProducto{
+    background: url('C:/Users/VidelaA/Documents/Curso de HTML/sprint/assets/img/portadaProductos.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.headerProducto h1{
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.contenedor{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* oculto lo que queda fuera del .contenedor */
+    contain: paint;
+}
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor .contenedor-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap:30px;
+    grid-row-gap: 30px;
+    width: 80%;
+    transition: .3s;
+}
+.contenedor .contenedor-items .item{
+    max-width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #E6E2AF;
+}
+.contenedor .contenedor-items .item .img-item{
+    width: 100%;
+}
+.contenedor .contenedor-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+.contenedor .contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contenedor .contenedor-items .item .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.contenedor .contenedor-items .item .boton-item{
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    margin: 10px auto;
+    border: none;
+    background-color: #E6E2AF;
+    color: #333;
+    padding: 5px 15px;
+    border-radius: 59px;
+    cursor: pointer;
+}
+/* seccion carrito */
+.carrito{
+    border: 1px solid #666;
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+    /* Estilos para ocultar */
+    margin-right: -100%;
+    opacity: 0;
+}
+.carrito .header-carrito{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+.carrito .carrito-item{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    position: relative;
+    border-bottom: 1px solid #666;
+    padding: 20px;
+}
+.carrito .carrito-item img{
+    margin-right: 20px;
+}
+.carrito .carrito-item .carrito-item-titulo{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f3f3f3;
+}
+.carrito .carrito-item .selector-cantidad{
+    display: inline-block;
+    margin-right: 25px;
+    color: #f3f3f3;
+}
+.carrito .carrito-item .carrito-item-cantidad{
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    display: inline-block;
+    width:30px;
+    padding: 5px;
+    text-align: center;
+    color: #f3f3f3;
+
+}
+.carrito .carrito-item .selector-cantidad i{
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.carrito .carrito-item .carrito-item-precio{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #f3f3f3;
+    
+}
+.carrito .carrito-item .btn-eliminar{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #000;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+.carrito .carrito-item .btn-eliminar i{
+    pointer-events: none;
+}
+
+.carrito-total{
+    background-color: #f3f3f3;
+    padding: 30px;
+}
+.carrito-total .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.carrito-total .btn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+.carrito-total .btn-pagar:hover{
+    scale: 1.05;
+}
+
