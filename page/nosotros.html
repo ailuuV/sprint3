@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\assets\styles\style_inicio.css">
-    <link rel="stylesheet" href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\assets\styles\style_responsive.css">
-    <link rel="stylesheet" href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\assets\styles\style_animaciones.css">
+    <!--Linkeo estilos CSS-->
+    <link rel="stylesheet" href="../assets/styles/style_animaciones.css">
+    <link rel="stylesheet" href="../assets/styles/style_inicio.css">
+    <link rel="stylesheet" href="../assets/styles/style_responsive.css">
+    <!--Linkeo fuentes google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amaranth&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <!--linkeo JS-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/app.js"></script>
     <title>Nosotros</title>
 </head>
 
@@ -25,20 +33,21 @@
 
 
             <!--menu-->
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="nav_items" id="_items">
+                <a href="../index.html">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./contacto.html">Contacto</a>
             </div>
-            <ul class="menu">
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\index.html">Inicio</a></li>
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\productos.html">Productos</a></li>
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\nosotros.html">Nosotros</a></li>
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\contacto.html">Contacto</a></li>
-            </ul>
             <ul class="menu2">
                 <li class="contacto">(+54) 261-7168715</li>
             </ul>
+            <!--menu responsive-->
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </div>
     <header>
@@ -71,8 +80,7 @@
             transformar simples ingredientes en momentos inolvidables. ¡Gracias por ser parte de nuestra historia y por
             permitirnos endulzar tus días con nuestro amor por el chocolate de vanguardia!
         </p>
-        <img class="imgNosotros"
-            src="C:\Users\VidelaA\Documents\Curso de HTML\sprint\assets\img\imagen sobre nosotros.png">
+        <img class="imgNosotros" src="../assets/img/imagen sobre nosotros.png">
     </main>
     <!--LINEA SEPARADORA-->
     <div class="separador"></div>
@@ -81,8 +89,7 @@
     <footer>
         <nav class="footer">
             <div class="logoSecundario">
-                <img src="C:\Users\VidelaA\Documents\Curso de HTML\sprint\assets\img\logo.png" width="5%"
-                    class="logoProducto">
+                <img src="../assets/img/logo.png" width="5%" class="logoProducto">
                 <div class="marca">
                     <p class="boria"> Boria </p>
                     <p class="bomboneria">Bomboneria</p>
@@ -91,10 +98,10 @@
             </div>
 
             <ul class="footerMenu1">
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\index.html">Inicio</a></li>
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\productos.html">Productos</a></li>
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\nosotros.html">Nosotros</a></li>
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\contacto.html">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./page/productos.html">Productos</a></li>
+                <li><a href="./page/nosotros.html">Nosotros</a></li>
+                <li><a href="./page/contacto.html">Contacto</a></li>
             </ul>
             <ul class="footerMenu2">
                 <li>
@@ -106,13 +113,6 @@
             </ul>
         </nav>
     </footer>
-    <script>
-        $(document).ready(function () {
-            $(".menu-toggle").click(function () {
-                $(".menu").toggleClass("active");
-            });
-        });
-    </script>
 </body>
 
 </html>

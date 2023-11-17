@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Linkeo estilos CSS-->
-    <link rel="stylesheet" href="assets\styles\style_inicio.css">
-    <link rel="stylesheet" href="assets\styles\style_responsive.css">
-    <link rel="stylesheet" href="assets\styles\style_animaciones.css">
+    <link rel="stylesheet" href="./assets/styles/style_animaciones.css">
+    <link rel="stylesheet" href="./assets/styles/style_inicio.css">
+    <link rel="stylesheet" href="./assets/styles/style_responsive.css">
     <!--Linkeo fuentes google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
         rel="stylesheet">
     <!--linkeo JS-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./JS/app.js"></script>
     <!--Titulo de la pagina-->
     <title>Inicio</title>
 
@@ -27,25 +28,28 @@
         <nav>
             <!--logo-->
             <div class="logoPrincipal">
-                <img class="logo" src="assets/img/logo.png" alt="logo-boria">
+                <img class="logo" src="./assets/img/logo.png" alt="logo-boria">
                 <p>Mendoza</p>
             </div>
 
             <!--menu-->
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="nav_items" id="_items">
+                <a href="index.html">Inicio</a>
+                <a href="./page/productos.html">Productos</a>
+                <a href="./page/nosotros.html">Nosotros</a>
+                <a href="./page/contacto.html">Contacto</a>
             </div>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="page\productos.html">Productos</a></li>
-                <li><a href="page\nosotros.html">Nosotros</a></li>
-                <li><a href="page\contacto.html">Contacto</a></li>
-            </ul>
+
             <ul class="menu2">
                 <li class="contacto">(+54) 261-7168715</li>
             </ul>
+
+            <!--menu responsive-->
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <br>
         <br>
@@ -57,7 +61,7 @@
             <div class="botonesHeader">
                 <ul class="productoEncabezado">
                     <li>
-                        <a class="encabezadoProducto" href="page/productos.html"> <button
+                        <a class="encabezadoProducto" href="./page/productos.html"> <button
                                 class="botonProducto">PRODUCTOS</button></a>
                     </li>
                 </ul>
@@ -65,13 +69,11 @@
                 <div class="redSocial">
                     <li>
                         <a href="https://www.instagram.com/boria_bomboneria/" target="_blank"><img
-                                src="assets/img/icono instagram.png" alt="Instagram"
-                                width="3%"></a>
+                                src="./assets/img/icono instagram.png" alt="Instagram" width="3%"></a>
                     </li>
                     <li>
-                        <a href="https://wa.link/nsf5om" target="_blank"><img
-                                src="assets/img/icono whatsapp.png" alt="whatsapp"
-                                width="3%"></a>
+                        <a href="https://wa.link/nsf5om" target="_blank"><img src="./assets/img/icono whatsapp.png"
+                                alt="whatsapp" width="3%"></a>
                     </li>
                 </div>
             </div>
@@ -79,34 +81,40 @@
     </div>
     <main>
         <!--primer descripcion pagina de inicio -->
-        
+
         <div class="contenedor">
             <div>
                 <h3 class="tituloCreandoMagia">Creando Magia en Cada Bocado</h3>
-                <p class="textoCreandoMagia">En el corazón de nuestra chocolatería, se encuentra una pasión que se derrite y se moldea
-                    en cada bombón que creamos. La preparación de nuestros exquisitos bombones es un proceso meticuloso que
-                    combina la creatividad con la precisión, llevando a nuestros clientes a un viaje sensorial inolvidable
+                <p class="textoCreandoMagia">En el corazón de nuestra chocolatería, se encuentra una pasión que se
+                    derrite y se moldea
+                    en cada bombón que creamos. La preparación de nuestros exquisitos bombones es un proceso meticuloso
+                    que
+                    combina la creatividad con la precisión, llevando a nuestros clientes a un viaje sensorial
+                    inolvidable
                 </p>
             </div>
             <div class="CreandoMagia">
-                <img class="imagen1" src="assets/img/1 imagen inicio.png" >
+                <img class="imagen1 blur-in" src="./assets/img/1 imagen inicio.png">
             </div>
         </div>
         <!--segunda descripcion pagina de inicio -->
-        
+
         <div class="contenedor">
-            <div class="CreandoCreandoMomentos">
-                <img class="imagen2" src="assets/img/2 imagen inicio.png"  >
-            </div>
             <div>
                 <h3 class="tituloCreandoMomentos">Creando Momentos Inolvidables</h3>
-                <p class="textoCreandoMomentos">En nuestra chocolatería, no solo nos dedicamos a crear deliciosos bombones, sino también a
-                    transformar eventos especiales en experiencias inolvidables. Desde bodas elegantes hasta celebraciones
-                    íntimas, nos especializamos en el arte de armar regalos y mesas dulces que deleitan tanto los ojos como
+                <p class="textoCreandoMagia">En nuestra chocolatería, no solo nos dedicamos a crear deliciosos
+                    bombones, sino también a
+                    transformar eventos especiales en experiencias inolvidables. Desde bodas elegantes hasta
+                    celebraciones
+                    íntimas, nos especializamos en el arte de armar regalos y mesas dulces que deleitan tanto los ojos
+                    como
                     el paladar.</p>
             </div>
-        </div>    
-        
+            <div class="CreandoCreandoMomentos">
+                <img class="imagen2 blur-in" src="./assets/img/2 imagen inicio.png">
+            </div>
+        </div>
+
     </main>
 
     <!--LINEA SEPARADORA-->
@@ -116,7 +124,7 @@
     <footer>
         <nav class="footer">
             <div class="logoSecundario">
-                <img src="assets/img/logo.png" width="10%" class="logo">
+                <img src="./assets/img/logo.png" width="10%" class="logo">
                 <div class="marca">
                     <p class="boria"> Boria</p>
                     <p class="bomboneria">Bomboneria</p>
@@ -126,25 +134,21 @@
 
             <ul class="footerMenu1">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="page/productos.html">Productos</a></li>
-                <li><a href="page/nosotros.html">Nosotros</a></li>
-                <li><a href="page/contacto.html">Contacto</a></li>
+                <li><a href="./page/productos.html">Productos</a></li>
+                <li><a href="./page/nosotros.html">Nosotros</a></li>
+                <li><a href="./page/contacto.html">Contacto</a></li>
             </ul>
             <ul class="footerMenu2">
-                <li><p class="derechos">© 2023 Todos los derechos reservados.</p></li>
-                <li><p class="derechos">Diseño y desarrollo: Ailen Videla</p></li>
+                <li>
+                    <p class="derechos">© 2023 Todos los derechos reservados.</p>
+                </li>
+                <li>
+                    <p class="derechos">Diseño y desarrollo: Ailen Videla</p>
+                </li>
             </ul>
         </nav>
 
     </footer>
-    <!--linkeo de JS a bootstrap-->
-    <script>
-        $(document).ready(function () {
-            $(".menu-toggle").click(function () {
-                $(".menu").toggleClass("active");
-            });
-        });
-    </script>
 
 </body>
 

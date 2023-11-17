@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\VidelaA\Documents\Curso de HTML\sprint\assets\styles\style_inicio.css">
-    <link rel="stylesheet" href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\assets\styles\style_responsive.css">
-    <link rel="stylesheet" href="C:\Users\VidelaA\Documents\Curso de HTML\sprint\assets\styles\style_animaciones.css">
+    <!--Linkeo estilos CSS-->
+    <link rel="stylesheet" href="../assets/styles/style_animaciones.css">
+    <link rel="stylesheet" href="../assets/styles/style_inicio.css">
+    <link rel="stylesheet" href="../assets/styles/style_responsive.css">
+    <!--Linkeo fuentes google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amaranth&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <!--linkeo JS-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/app.js"></script>
     <title>Contacto</title>
 </head>
 
@@ -18,26 +26,28 @@
         <nav>
             <!--logo-->
             <div class="logoPrincipal">
-                <img class="logo" src="C:\Users\VidelaA\Documents\Curso de HTML\sprint\assets\img\logo.png" alt="logo-boria">
+                <img class="logo" src="../assets/img/logo.png" alt="logo-boria">
                 <p>Mendoza</p>
             </div>
 
 
             <!--menu-->
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="nav_items" id="_items">
+                <a href="../index.html">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./contacto.html">Contacto</a>
             </div>
-            <ul class="menu">
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\index.html">Inicio</a></li>
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\productos.html">Productos</a></li>
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\nosotros.html">Nosotros</a></li>
-                <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\contacto.html">Contacto</a></li>
-            </ul>
             <ul class="menu2">
                 <li class="contacto">(+54) 261-7168715</li>
             </ul>
+
+            <!--menu responsive-->
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <header>
             <h1 class="tituloContacto zoomIn">Contacto</h1>
@@ -66,11 +76,10 @@
                     <label for="mensaje"></label>
                     <textarea id="mensaje" name="mensaje" rows="6" placeholder="Mensaje"></textarea>
 
-                    <button class="botonAgregar" type="submit">Enviar</button>
+                    <button class="boton-enviar" type="submit">Enviar</button>
                 </div>
 
             </div>
-
         </main>
         <!--LINEA SEPARADORA-->
         <div class="separador"></div>
@@ -79,7 +88,8 @@
         <footer>
             <nav class="footer">
                 <div class="logoSecundario">
-                    <img src="C:\Users\VidelaA\Documents\Curso de HTML\sprint\assets\img\logo.png" width="10%" class="logo">
+                    <img src="C:\Users\VidelaA\Documents\Curso de HTML\sprint\assets\img\logo.png" width="10%"
+                        class="logo">
                     <div class="marca">
                         <p class="boria"> Boria </p>
                         <p class="bomboneria">Bomboneria</p>
@@ -88,10 +98,10 @@
                 </div>
 
                 <ul class="footerMenu1">
-                    <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\index.html">Inicio</a></li>
-                    <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\productos.html">Productos</a></li>
-                    <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\nosotros.html">Nosotros</a></li>
-                    <li><a href="C:\Users\VidelaA\Documents\Curso de HTML\sprint3\page\contacto.html">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
                 <ul class="footerMenu2">
                     <li class="derechos">© 2023 Todos los derechos reservados.</li>
@@ -99,14 +109,7 @@
                 </ul>
             </nav>
         </footer>
-        <!--linkeo de JS a bootstrap-->
-        <script>
-            $(document).ready(function () {
-                $(".menu-toggle").click(function () {
-                    $(".menu").toggleClass("active");
-                });
-            });
-        </script>
+
 </body>
 
 </html>

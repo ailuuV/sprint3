@@ -1,4 +1,16 @@
 
+
+//menu responsive
+
+document.addEventListener('DOMContentLoaded', function () {
+    const _toggle = document.getElementById('_toggle');
+    const _items = document.getElementById('_items');
+
+    _toggle.addEventListener('click', () => {
+        _items.classList.toggle("open");
+    });
+});
+
 //carga de documento
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
